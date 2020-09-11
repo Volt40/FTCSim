@@ -24,10 +24,10 @@ public class FTCSim extends Application {
 		primaryStage.show();
 		
 		MecanumRobotSimulation r = new MecanumRobotSimulation(72, 72, 0, 7, 8, 4, 90, Units.INCHES, RobotColor.BLUE);
-		r.getMotorSpeeds()[0] = 1;
-		r.getMotorSpeeds()[1] = 1;
-		r.getMotorSpeeds()[2] = 1;
-		r.getMotorSpeeds()[3] = 1;
+		r.getMotorSpeeds()[0] = 0;
+		r.getMotorSpeeds()[1] = 0;
+		r.getMotorSpeeds()[2] = 0;
+		r.getMotorSpeeds()[3] = 0;
 		r.start();
 		
 		root.getChildren().addAll(r);
